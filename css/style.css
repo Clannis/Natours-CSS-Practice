@@ -52,12 +52,14 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); /* moves position referencing of element to new location (-50%, -50%) makes reference at center point */
+    text-align: center;
 }
 
 .heading-primary {
     color: #FFF;
     text-transform: uppercase;
     backface-visibility: hidden; /* fix the shakiness of element after animation */
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -115,4 +117,29 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px /* verticle */ 40px /* horizontal */ ;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white {
+    background-color: #FFF;
+    color: #777;
 }
