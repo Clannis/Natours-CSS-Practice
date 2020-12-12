@@ -1,6 +1,5 @@
 .row
     max-width: $grid-width
-    background-color: #eee
     margin: 0 auto
     
     &:not(:last-child) // selects all but :last-child
@@ -9,7 +8,6 @@
     @include clearfix
 
     [class^="col-"] // select all with classes starting with "col-". *= is for contains. $= ends with
-        background-color: orangered
         float: left
 
         &:not(:last-child)
