@@ -469,7 +469,7 @@ body {
     padding-top: 2rem;
     display: inline-block; }
   .footer__list {
-    list-syle: none; }
+    list-style: none; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
@@ -480,7 +480,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    tansition: all .3s; }
+    transition: all .2s; }
   .footer__link:hover, .footer__link:active {
     color: #34b91d;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
