@@ -10,10 +10,10 @@ html
     // defines 1rem size as 10px
     font-size: 62.5% // default browser font size is 16px 62.5% of 16 is 10px (our wanted default font size)
     
-    @include respond(tab-land)
+    @include respond(tab-land) //width < 1200
         font-size: 56.25%
     
-    @include respond(tab-port)
+    @include respond(tab-port) // width < 900
         font-size: 50%
 
     @include respond(big-desktop)
@@ -21,3 +21,7 @@ html
 
 body  
     box-sizing: border-box // set this inherited CSS property at the base element we want to use it in
+    padding: 3rem 
+
+    @include respond(tab-port) // width < 900
+        padding: 0
