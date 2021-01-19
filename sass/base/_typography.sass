@@ -17,6 +17,10 @@ body
         font-weight: 400 // weight is pulled from available weights from font import in html
         letter-spacing: 3.5rem
 
+        @include respond(phone)
+            letter-spacing: 1rem
+            font-size: 5rem
+
         animation-name: moveInLeft
         animation-duration: 1s
         animation-timing-function: ease-out
@@ -31,8 +35,10 @@ body
         font-size: 2rem
         font-weight: 700
         letter-spacing: 1.75rem
-
         animation: moveInRight 1s ease-out // combine animation properties and let the computer figure out where everything goes
+
+        @include respond(phone)
+            letter-spacing: .5rem
 
 .heading-secondary
      font-size: 3.5rem
